@@ -1,0 +1,630 @@
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+#navbar{
+    background-color: #2D2727;
+    padding: 2rem;
+}
+
+#navbarNav>ul>li>a{
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+#navbarNav>ul>li>a:hover{
+    color: #E5B29A !important;
+}
+
+.nav-link{
+    color: white !important;
+}
+
+#hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+#hero:before {
+    content:"";
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    z-index:1;
+    background:linear-gradient(to right,rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.3));
+  }
+
+#hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 1000;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    color: #6c757d;
+}
+
+#btnCta{
+    background-color:#35BF48;
+    color: white;
+    border-radius: 5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.5rem  0.5rem;
+    border: none;
+}
+
+#btnCta:hover{
+    background-color: unset;
+    color: white;
+    border: 1px solid #ffff;
+}
+
+#btnCtaWhatsapp{
+    background-color:#35BF48;
+    color: #2D2727;
+    border-radius: 5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.5rem  0.5rem;
+    border: none;
+    margin-top: 2rem;
+}
+
+#btnCtaWhatsapp:hover{
+    background-color: unset;
+    color: #2D2727;
+    border: 1px solid #2D2727;
+}
+
+#iconWppLight{
+    fill: #2D2727;
+}
+
+#iconWpp{
+    fill: white;
+}
+
+
+#btnCta2{
+    background-color:#008ECE;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+}
+
+#btnCta2:hover{
+    background-color: unset
+}
+
+#btnCta3{
+    background-color:#2D2727;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    font-weight: 500;
+    color: white;
+}
+
+#btnCta3:hover{
+    border: 1px solid #2D2727;
+    background-color: unset;
+    color: #2D2727;
+}
+
+#hero-content{
+    text-align: left;
+}
+
+#titleHeader{
+    font-size: 6rem;
+}
+
+#descriptionHeader{
+    font-size: 2rem;
+}
+
+.hero-content{
+    text-align: left;
+    padding-left: 5rem;
+}
+
+
+#rowAbout{
+    align-items: center;
+}
+
+#colAbout{
+    height: 100%;
+}
+
+#imgAbout{
+    padding: 2rem;
+}
+
+#boxInfoRow{
+    display: flex;
+    margin-top: 3rem;
+    text-align: center;
+    border: 1px solid rgba(215, 190, 190);
+    max-width: 100%;
+}
+
+#boxInfo{
+    padding: 2rem;
+    border-left: 1px solid rgba(215, 190, 190);
+}
+
+#divider{
+    margin-left: 2rem;
+}
+
+hr{
+    margin: 0 !important;
+}
+
+#mostSold{
+    margin: 5rem;
+    padding-top: 2rem;
+}
+
+#imgSwiper{
+    opacity: 1;
+    cursor: pointer;
+    background-color: unset;
+}
+
+#imgSwiper:hover{
+    opacity: 0.5;
+    background-color: unset;
+}
+
+#swiperBtn{
+    background-color: white;
+    color: black;
+    padding: 2rem;
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+#imgBoxSwiper{
+    background-color:unset
+}
+
+#imgBoxSwiper:hover{
+    transition: linear 0.5s;
+    background-color: #2D2727;
+}
+
+#descProduct{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+}
+
+#catalogo{
+    background-color: #008ECE;
+}
+
+#contentCatalogo{
+    height: 25rem;
+    padding: 2rem;
+    vertical-align: middle;
+    align-content: center;
+}
+
+#iconCatalogo{
+    width: 2rem;
+    margin: 1rem 0;
+}
+
+#colCatalogo{
+    align-content: center;
+    padding: 2rem;
+}
+
+#title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1.5rem; 
+}
+
+#titlePrincipal{
+    line-height: 40px;
+    margin: 2rem 0;
+}
+
+#imageClient{
+    width:  7rem;
+    object-fit: contain;
+}
+
+#clients{
+    justify-content: center;
+}
+
+#clientImgs{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#products{
+    padding-top: 2rem;
+}
+
+#productsTitle{
+    padding-bottom: 2rem;
+}
+
+#productsCatalogo{
+    background-color: #008ECE;
+}
+
+#rowProducts{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    gap: 1rem;
+    padding: 4rem 0;
+}
+
+#contentCatalogoProducts{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    width: 10rem;
+    place-items: center;
+}
+
+#iconCatalogoProdutos{
+    width: 3rem;
+}
+
+#coccaoLine{
+    background-color: #2D2727;
+}
+
+#coccaoLine{
+    display: flex;
+    color: white;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+#contentCatalogoProducts> h3 {
+    margin-top: 10px;
+}
+
+#containerBoxProdutos{
+    padding: 2rem 0;
+    width: 100%;
+}
+
+#boxImgCatalogoProdutos{
+    background-color:unset
+}
+
+#boxImgCatalogoProdutos:hover{
+    transition: linear 0.5s;
+    background-color: #2D2727;
+}
+
+#imgBoxCatalogoProdutos{
+    opacity: 1;
+    cursor: pointer;
+    background-color: unset;
+    width: 35rem;
+    height: 25rem;
+    object-fit: contain;
+    background-color: white;
+}
+
+#imgBoxCatalogoProdutos:hover{
+    opacity: 0.5;
+    background-color: white;
+}
+
+#boxCatalogoProdutos > h4{
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+#colSucesso{
+    padding: 2rem;
+    background-color: #008ECE;
+}
+
+#colSucesso > #titlePrincipal{
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 5rem;
+}
+
+#servicesAbout{
+    padding: 2rem 5rem 2rem 5rem; 
+}
+
+#imgGuiaSobre{
+    padding: 2rem;
+}
+
+#txtAbout{
+    padding: 5rem;
+}
+
+#containerRow{
+    display: flex;
+    max-width: 100%;
+    border-bottom: 1px solid rgba(215, 190, 190);
+}
+
+#sucessoCol{
+    border-right: 1px solid rgba(215, 190, 190);
+}
+
+#corteLaser{
+    width: 100%;
+    object-fit: cover;
+    height: 45rem;
+    padding: 1rem;
+}
+
+#rowMissao{
+    display: flex;
+    padding-top: 2rem;
+    max-width: 100%;
+    border-bottom: 1px solid rgba(215, 190, 190);
+}
+
+#colMission{
+    padding: 4rem;
+}
+
+#colMission > #titlePrincipal{
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 5rem;
+}
+
+footer{
+    background-color: white;
+    border-top: 1px solid rgba(215, 190, 190);
+}
+
+#colFooter{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    margin-top: 3rem;
+}
+
+#linksSite{
+    line-height: 4rem;
+    text-transform: uppercase;
+}
+
+#linksSite>li>a, #linksFooter>li>a{
+    color: unset;
+}
+
+#linksFooter{
+    line-height: 4rem;
+}
+
+#whatsappImg{
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 5rem;
+    z-index: 10000;
+}
+
+#linksFooter >li > a {
+    text-decoration:underline !important;
+}
+
+#linksFooter > a{
+    padding: 1rem 2rem;
+    color: black !important;
+    border: 1px solid black !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+#logoFooter{
+    width: 12rem;
+}
+
+#phone{
+    margin-top: 5rem;
+}
+
+#colFooter > #btnCta{
+    padding: 1rem 2rem !important;
+    color: black !important;
+    border: 1px solid black !important;
+}
+
+#clientes{
+    margin: 4rem 0;
+}
+
+.form-control, .form-select{
+    border: 1px solid black !important;
+    border-radius: 0 !important;
+}
+
+#formOrcamentoBox{
+    margin-top: 4rem;
+}
+
+#btnCtaForm{
+    background-color:#2D2727;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    padding: 0.5rem 3rem;
+    font-weight: 500;
+    color: white;
+    margin: 2rem 0;
+}
+
+#btnCtaForm:hover{
+    border: 1px solid #2D2727;
+    background-color: unset;
+    color: #2D2727;
+}
+
+#imgContato{
+    padding: 2rem;
+}
+
+#duvidas{
+    background-color: #008ECE;
+    height: 100%;
+}
+
+#titlePrincipalContato, #titlePrincipalOrcamento{
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+#colContato{
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+#rowContato{
+    padding: 4rem 1rem;
+}
+
+#secaoContato{
+    padding: 4rem 1rem;
+}
+
+#iconWhatsapp{
+    width: 1.5rem;
+}
+
+#btnModalWhatsapp{
+    background-color: #35BF48;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+    #rowAbout{
+        padding-top: 2rem;
+    }
+
+    #titleHeader{
+        font-size: 2.5rem;
+    }
+
+    #descriptionHeader{
+        font-size: 1.5rem;
+    }
+
+    #imgAbout{
+        padding: 0;
+    }
+
+    #dividerColumn{
+        height: 0 !important;
+    }
+
+    #colSucesso > #titlePrincipal{  
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+
+    #rowMissao, #containerRow{
+        flex-direction: column;
+    }
+
+    #txtAbout, #servicesAbout, #colMission{
+        padding: 2rem;
+    }
+
+    #colFooter{
+        border-bottom: 1px solid rgba(215, 190, 190);
+    }
+    
+    #footerColumn{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+    }
+
+    #logoFooter{
+        padding: 2rem 4rem;
+        width: 100%;
+    }
+
+    #formOrcamentoBox{
+        margin-top: 1rem;
+    }
+
+    #imgContato{
+        padding: 1rem;
+    }
+
+    #colContato{
+        gap: 1rem;
+    }
+
+    #mostSold{
+        margin: 2rem;
+    }
+    
+}
+
+@media screen and (max-width: 820px){
+    #rowAbout{
+        padding: 2rem 1rem;
+    }
+    #dividerColumn{
+        height: 0 !important;
+    }
+
+    #contentCatalogo{
+        border-top: 1px solid rgba(215, 190, 190);
+        border-right: 1px solid rgba(215, 190, 190) ;
+    }
+
+
+}
