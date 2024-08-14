@@ -36,7 +36,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/">
                 <img src="imgs/logoAcosPrimer.webp" alt="Logo" height="40">
             </a>
 
@@ -49,18 +49,18 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">Início</a>
+                        <a class="nav-link active" href="/">Início</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="projetos.html">Catálogo</a>
+                        <a class="nav-link" href="projetos">Catálogo</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="sobre.html">Sobre</a>
+                        <a class="nav-link" href="/sobre">Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contato.html">Contato</a>
+                        <a class="nav-link" href="/contato">Contato</a>
                     </li>
                 </ul>
 
@@ -252,12 +252,7 @@
                 </div>
 
             </div>
-            
-
         </div>
-
-
-
     </section>
 
     <!-- Seção de clientes -->
@@ -301,13 +296,7 @@
                 </div>
 
             </div>
-
-
-
         </div>
-
-
-
     </section>
 
     <!-- Footer -->
@@ -320,9 +309,9 @@
                     <h5 id="title">Institucional</h5>
                     <div id="colFooter">
                         <ul class="list-unstyled" id="linksSite">
-                            <li><a href="index.html">Início</a></li>
-                            <li><a href="projetos.html">Catálogo</a></li>
-                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a href="/">Início</a></li>
+                            <li><a href="projetos">Catálogo</a></li>
+                            <li><a href="/sobre">Sobre</a></li>
                             <li><a href="">Contato</a></li>
                         </ul>
 
@@ -388,32 +377,32 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <form>
+                <form id="formOrcamentoPrimer">
+                    <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">Nome:</label>
+                        <input type="text" class="form-control" required id="nameClient">
+                    </div>
 
-                <div class="mb-3">
-                  <label for="recipient-name" class="col-form-label">Nome:</label>
-                  <input type="text" required class="form-control" id="recipient-name">
-                </div>
+                    <div class="mb-3">
+                        <label for="phoneNumber" class="col-form-label">Telefone:</label>
+                        <input class="form-control" required id="phoneNumber"></input>
+                    </div>
 
-                <div class="mb-3">
-                  <label for="phoneNumber" class="col-form-label">Telefone:</label>
-                  <input class="form-control" required id="phoneNumber"></input>
-                </div>
+                    <div class="mb-3">
+                        <label for="email" class="col-form-label">E-mail:</label>
+                        <input class="form-control" required id="email"></input>
+                    </div>
 
-                <div class="mb-3">
-                  <label for="email" class="col-form-label">E-mail:</label>
-                  <input class="form-control" required id="email"></input>
-                </div>
+                    <div class="mb-3">
+                        <label for="typeProduct" class="col-form-label">Qual produto deseja?</label>
+                        <input class="form-control" required id="typeProduct"></input>
+                    </div>
 
-                <div class="mb-3">
-                  <label for="typeProduct" class="col-form-label">Qual produto deseja?</label>
-                  <input class="form-control" required id="typeProduct"></input>
-                </div>
+                    <div class="modal-footer">
+                      <button type="submit" id="btnModalWhatsapp" class="btn btn-whatsapp">Enviar</button>
+                    </div>
 
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" id="btnModalWhatsapp" class="btn btn-whatsapp">Enviar</button>
+                </form>
             </div>
           </div>
         </div>
