@@ -35,7 +35,7 @@ window.addEventListener("load", function (event) {
             window.location. href = 'https://api.whatsapp.com/send/?phone=5521959142173&text=Ol%C3%A1%2C+gostaria+de+fazer+uma+cota%C3%A7%C3%A3o%21+&type=phone_number&app_absent=0'; 
         },1000)
     }
-
+    document.getElementById('hero-video').play();
 
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
