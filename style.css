@@ -180,7 +180,7 @@ footer {
 }
 
 #boxInfo{
-    padding: 2rem;
+    padding: 2rem 1rem;
     border-left: 1px solid rgba(215, 190, 190);
 }
 
@@ -267,8 +267,9 @@ hr{
 }
 
 #imageClient{
-    width:  7rem;
+    width:  6rem;
     object-fit: contain;
+    margin: 1rem 0.5rem;
 }
 
 #clients{
@@ -543,10 +544,9 @@ a{
     background-color: #35BF48;
     color: white;
 }
-
 @media screen and (max-width: 768px){
     #rowAbout{
-        padding-top: 2rem;
+        padding: 2rem 0;
     }
 
     #titleHeader{
@@ -618,12 +618,21 @@ a{
         padding: 1rem;
     }
 
+    #boxInfo > p {
+        font-size: 0.9rem;
+    }
+
+    #boxInfoRow{
+        margin: 2rem 0;
+        padding: 0;
+    }
+
  
 }
 
 @media screen and (max-width: 820px){
     #rowAbout{
-        padding: 2rem 1rem;
+        padding: 2rem 0rem;
     }
     #dividerColumn{
         height: 0 !important;

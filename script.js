@@ -23,8 +23,8 @@ function processaForm(e){
     })
 }
 
-const formOrcamento = document.getElementById("formOrcamentoPrimer");
-formOrcamento.addEventListener("submit", processaForm);
+// const formOrcamento = document.getElementById("formOrcamentoPrimer");
+// formOrcamento.addEventListener("submit", processaForm);
 
 
 
