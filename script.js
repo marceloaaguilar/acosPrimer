@@ -35,7 +35,9 @@ window.addEventListener("load", function (event) {
             window.location. href = 'https://api.whatsapp.com/send/?phone=5521959142173&text=Ol%C3%A1%2C+gostaria+de+fazer+uma+cota%C3%A7%C3%A3o%21+&type=phone_number&app_absent=0'; 
         },1000)
     }
-    document.getElementById('hero-video').play();
+    if(document.getElementById('hero-video')){
+        document.getElementById('hero-video').play();
+    }
 
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
@@ -60,3 +62,40 @@ window.addEventListener("load", function (event) {
         }
     });
 });
+
+const slideBox      = document.querySelectorAll(".swiper-slide");
+const boxProdutos   = document.querySelectorAll(".boxCatalogoProdutos");
+
+if(slideBox !== null || boxProdutos !== null){
+    if(slideBox){
+        slideBox.forEach((e)=> {
+            e.addEventListener("click", processaAberturaModal)
+        });
+    }
+    if(boxProdutos){
+        boxProdutos.forEach((e)=> {
+            e.addEventListener("click", processaAberturaModal)
+        });
+    }
+}
+
+
+function processaAberturaModal(e) {
+    const modalTitle       = document.getElementById("modalTitle");
+    const modalImg         = document.getElementById("modalImg");
+    const modalDescription = document.getElementById("modalDescription");
+
+    if(e.target){
+        modalImg.src                = e.target.src;
+        modalTitle.innerHTML        = e.target.parentElement.nextElementSibling.innerHTML;
+        if(e.target.parentElement.nextElementSibling.nextElementSibling.innerHTML){
+            modalDescription.innerHTML  = e.target.parentElement.nextElementSibling.nextElementSibling.innerHTML;
+        }
+    }
+
+    const modal = new bootstrap.Modal(document.getElementById('modalProdutos'));
+    modal.show();
+
+
+
+}

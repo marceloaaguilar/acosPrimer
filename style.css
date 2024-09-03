@@ -355,7 +355,7 @@ hr{
     background-color: white;
 }
 
-#boxCatalogoProdutos > h4{
+.boxCatalogoProdutos > h4{
     margin-top: 0.5rem;
     font-size: 0.8rem;
 }
@@ -544,6 +544,19 @@ a{
     background-color: #35BF48;
     color: white;
 }
+
+#modalImg{
+    width: 25rem;
+}
+
+#fullDescription{
+    display: none;
+}
+
+#modalTitle{
+    text-transform: uppercase;
+}
+
 @media screen and (max-width: 768px){
     #rowAbout{
         padding: 2rem 0;
