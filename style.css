@@ -640,6 +640,10 @@ a{
         padding: 0;
     }
 
+    #modalImg{
+        width: 100%;
+    }
+
  
 }
 

@@ -23,8 +23,8 @@ function processaForm(e){
     })
 }
 
-// const formOrcamento = document.getElementById("formOrcamentoPrimer");
-// formOrcamento.addEventListener("submit", processaForm);
+const formOrcamento = document.getElementById("formOrcamentoPrimer");
+formOrcamento.addEventListener("submit", processaForm);
 
 
 
@@ -39,28 +39,32 @@ window.addEventListener("load", function (event) {
         document.getElementById('hero-video').play();
     }
 
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 40,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: true,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 40
+    let swiperBox = document.querySelector(".mySwiper");
+
+    if(swiperBox !== undefined && swiperBox !== null && swiperBox !== ''){
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 40,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 40
+                }
             }
-        }
-    });
+        });
+    }
 });
 
 const slideBox      = document.querySelectorAll(".swiper-slide");
