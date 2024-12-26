@@ -1,5 +1,6 @@
 * {
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
 
 #navbar{
@@ -555,6 +556,10 @@ a{
 
 #modalTitle{
     text-transform: uppercase;
+}
+
+#capaPrincipal{
+    width: 100vw;
 }
 
 @media screen and (max-width: 768px){
